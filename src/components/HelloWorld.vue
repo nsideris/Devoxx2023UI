@@ -28,7 +28,7 @@ export default {
 		
 		function fetchData() {
 			return fetch(
-				"http://devoxx2023.dev.k8s.signalocean.com/ServiceBusCount",{cache: 'no-cache'}
+				"https://signaloceantestapims.azure-api.net/devoxx/ServiceBusCount",{cache: 'no-cache'}
 			)
 				.then(async (res) => { 
 					var textValue = await res.json();
