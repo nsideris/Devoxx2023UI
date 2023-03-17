@@ -1,8 +1,5 @@
+# Devoxx2023 Demos
 
-## Demo site
-```
-https://nsideris.github.io/Devoxx2023UI/
+## Slides
  
- 
-
-
+[Demo App](https://nsideris.github.io/Devoxx2023UI/)
