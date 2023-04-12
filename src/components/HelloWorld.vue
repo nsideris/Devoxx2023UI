@@ -33,10 +33,14 @@ export default {
 				.then(async (res) => { 
 					var textValue = await res.json();
 					if (textValue.environment == "blue") {
-						blueEnv.value = textValue.queueMessagesProccessed;
+						if (blueEnv.value<textValue.queueMessagesProccessed) {
+							blueEnv.value = textValue.queueMessagesProccessed;
+						}
 					}
 					if (textValue.environment == "green") {
-						greenEnv.value = textValue.queueMessagesProccessed;
+						if (greenEnv.value<textValue.queueMessagesProccessed) {
+							greenEnv.value = textValue.queueMessagesProccessed;
+						} 
 					}
 				})
 				.catch((err) => {
